@@ -1,20 +1,28 @@
-arr = [1,2]
-function sumAll(arr) {
+// function sumAll(arr) {
 
-    let fullArr = [];
-    let sum = 0;
-    const reducer = (accumulator, currentValue) => accumulator + currentValue;
+ //   let fullArr = [];
+ //   let sum = 0;
+ //   const reducer = (a, b) => a + b;
+//
+ //   arr.sort(function(a, b) {
+ //       return a - b
+ //   });
 
-    arr.sort(function(a, b) {
-        return a - b
-    });
+ //   for (let i = arr[0]; i <= arr[1]; i++) {
+ ////       fullArr.push(i);
+ //   }
 
-    for (let i = arr[0]; i <= arr[1]; i++) {
-        fullArr.push(i);
-    }
+ //   sum = fullArr.reduce(reducer);
+ 
+  //  return sum;
+//}
+//const arr = [1,4]
 
-    sum = fullArr.reduce(reducer);
+//console.log(sum)
 
-    return sum;
-}
-alert(sumAll)
+
+
+//function digitize(n) {
+//    return String(n).split('').reverse().map(Number)
+//  }
+
