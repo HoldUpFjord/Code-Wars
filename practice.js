@@ -40,4 +40,31 @@
    //}
    
  //}
+// Beginner Series #2 Clock, 7Kyu
+ //function past(h, m, s){
+ //   //#Happy Coding! ^_^
+ //   const hoursToMilli = (((h *  60) * 60)* 1000);
+ //   const minToMilli = ((m * 60) * 1000);
+ //   const secToMilli = s * 1000;
+ //   newArr = [hoursToMilli, minToMilli, secToMilli]
+ //   const initialValue = 0;
+ //   const milliSum = newArr.reduce(
+ //       (previousValue,currentValue) => previousValue + currentValue,
+ //       initialValue
+ //       
+ //   );//
+ //   return milliSum
+ // } 
+ // console.log(past(0,1,1))
 
+
+ //8 kyu Convert a string to an array
+ 
+ function stringToArray(string){
+    newArr = string.split(' ')
+    return newArr
+  
+      // code code code
+  
+  }
+  console.log(stringToArray("Jack digs dogs"));
