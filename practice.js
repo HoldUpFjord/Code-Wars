@@ -60,11 +60,11 @@
 
  //8 kyu Convert a string to an array
  
- function stringToArray(string){
-    newArr = string.split(' ')
-    return newArr
+ //function stringToArray(string){
+    //newArr = string.split(' ')
+    //return newArr
   
-      // code code code
+      // code code code//
   
-  }
-  console.log(stringToArray("Jack digs dogs"));
+  //}
+  //console.log(stringToArray("Jack digs dogs"));
