@@ -68,3 +68,20 @@
   
   //}
   //console.log(stringToArray("Jack digs dogs"));
+
+
+function noSpace(x){
+  var result = ''
+  for(var index = 0; index < x.length; index++){
+    if(x[index] !== ' '){
+      result += x[index];
+    }
+  }
+  return result;
+}
+
+/// 8kyu
+function setAlarm(employed, vacation){
+  return employed === true && vacation === false
+  
+}
