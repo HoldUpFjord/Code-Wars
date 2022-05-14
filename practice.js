@@ -85,3 +85,13 @@ function setAlarm(employed, vacation){
   return employed === true && vacation === false
   
 }
+
+
+/// 8kyu Invert values
+function invert(array) {
+  const map2 = array.map( x => x * (-1) );
+    
+  
+   return map2 ;
+  
+}
