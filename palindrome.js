@@ -10,3 +10,4 @@ function isPalindrome(x) {
     if(togLower == lower){
       return true
     }else return false
+}
