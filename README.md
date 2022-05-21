@@ -1,4 +1,2 @@
 # Code-Wars
-My Code Wars practice solutions.
-Here we go
-lets go
+I solve one codewars solution everyday, 7 days a week.
