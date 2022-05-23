@@ -22,23 +22,8 @@
 
 
 
-//function digitize(n) {
-//    return String(n).split('').reverse().map(Number)
-//  }
 
-////function oddOrEven(array) {
-    //enter code here
-   //initalValue = 0;
-   //let sum = array.reduce(
- //(previousValue, currentValue) => previousValue + currentValue,
-   //initalValue
-   //);
-   //if(sum % 2 == 0){
-     //return 'even'
-   //}else{
-     //return 'odd'
-   //}
-   
+
  //}
 // Beginner Series #2 Clock, 7Kyu
  //function past(h, m, s){
@@ -70,21 +55,8 @@
   //console.log(stringToArray("Jack digs dogs"));
 
 
-function noSpace(x){
-  var result = ''
-  for(var index = 0; index < x.length; index++){
-    if(x[index] !== ' '){
-      result += x[index];
-    }
-  }
-  return result;
-}
 
-/// 8kyu
-function setAlarm(employed, vacation){
-  return employed === true && vacation === false
-  
-}
+
 
 
 /// 8kyu Invert values
@@ -97,13 +69,4 @@ function invert(array) {
 }
 
 
-///8kyu 
-function doubleInteger(i) {
-  // i will be an integer. Double it and return it.
-  return i * 2;
-}
 
-///7kyu
-function friend(friends){
-  return friends.filter(value => value.length === 4);
-}
