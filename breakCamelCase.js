@@ -9,3 +9,15 @@ function solution(string) {
     })
     return res;
 }
+
+
+function soluton( string) {
+    res=""
+    let letters = string.split("");
+    letters.forEach(letter=>{
+        if(letter.toUpperCase() == letter)
+            res+=" "+letter
+        else   
+            res+=letter
+    })
+}
