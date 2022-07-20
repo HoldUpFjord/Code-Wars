@@ -5,3 +5,8 @@ function SeriesSum(n) {
   }
   return sum.toFixed(2);
 }
+
+@media screen and (max-width:1280px) {
+	#photoContainer{
+		display:flex;
+		flex-flow:column
