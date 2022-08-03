@@ -5,3 +5,4 @@ function pipeFix(numbers){
     for(  i = mini; i <= maxu;i++){
       array.push(i)
     }
+}
