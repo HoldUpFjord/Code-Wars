@@ -1,6 +1,4 @@
 function plural(n) {
     // ...
-    if(n === 1){
-      return false
-    }else true
+    return (n === 1 ? false:true)
   }
