@@ -1,0 +1,5 @@
+function productArray(numbers)
+{
+  var sum = numbers.reduce((x, y) => x * y);
+  return numbers.map(x => sum / x);
+}
