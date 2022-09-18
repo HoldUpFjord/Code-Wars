@@ -1,18 +1,13 @@
-function queueTime(customers, n) {
-    //TODO
-    //if customers array is equal to zero
-    if(customers.length === 0 ){
-      return  0
-    //if n = 1, return sum array
-    }else if( n === 1){
-      return customers.reduce((a,b) => 
-        a+b,
-          0,
-      );
-    }else if()
-    
-   //if customers[0] is greater than the sum of the rest of the arr, return customers[0]
-   //
-    //if n > sum of customers, return the greatest numer in arr
-    
+function queueTime(customers, registers) {
+    let arr = [];
+  
+    for(let i = 0; i < registers; i++)
+      arr[i] = 0;
+  
+    for(let i = 0; i < customers.length; i++) {
+      arr[0] += customers[i];
+      arr.sort((a, b) => a - b);
+    }
+  
+    return arr[arr.length - 1];
   }
