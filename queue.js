@@ -9,5 +9,5 @@ function queueTime(customers, registers) {
       arr.sort((a, b) => a - b);
     }
   
-    return arr[arr.length - 1];
+    return arr[arr.length - 1] ;
   }
