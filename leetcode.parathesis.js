@@ -1,4 +1,4 @@
-// misunderstood test cases. For valid output, must be changed to so that ANY open bracket is valid as long as it is CLOSED. 
+// misunderstood test cases. For valid output, must be changed to so that ANY open bracket is valid as long as it is CLOSED. git 
 
 function paranthesis(s) {
     // input s will always be a string
