@@ -19,6 +19,7 @@ function missingVowel(str){
     if (str.indexOf(vowels[i]) === -1){
       return i
     }
+    
   }
   
 }
