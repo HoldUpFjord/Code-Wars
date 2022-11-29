@@ -1,0 +1,8 @@
+function removeDups(arr){
+  //use a map to go through array for each string
+  return arr.map(
+    // in map(for each word: split, filter, join)
+    word => word.split('').filter((l,i,a) => l != a[i-1]).join('')
+  )
+    
+}
