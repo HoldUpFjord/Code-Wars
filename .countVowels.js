@@ -10,3 +10,15 @@ function getCount(str) {
     
     return vowelsCount;
   }
+
+
+function missingVowel(str){
+  //list all vowels => loop through letters, and check if vowel is missing in str
+  let vowels = 'aeiou'
+  for(i = 0 ; i<vowels.length; i++){
+    if (str.indexOf(vowels[i]) === -1){
+      return i
+    }
+  }
+  
+}
