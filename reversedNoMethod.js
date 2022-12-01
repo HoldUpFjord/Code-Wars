@@ -11,3 +11,12 @@ function reverse(str){
     
   }
   
+  //OR
+
+  function reverse(str){
+    for(let char of str){
+        reverseStr = char + reverseStr
+
+    }
+    return reverseStr
+  }
