@@ -1,4 +1,4 @@
-▶︎
+
 
 function paranthesis(s) {
     // input s will always be a string
