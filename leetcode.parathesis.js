@@ -1,5 +1,3 @@
-
-
 function paranthesis(s) {
     // input s will always be a string
     //input s only comprised of bracket variations
