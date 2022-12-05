@@ -1,4 +1,5 @@
 
+// error due to linked lists being a seperate data type. Logic structred for arrays of int's 
 function middleNode(arr){
     let result = []
     let nodeLength = arr.length
