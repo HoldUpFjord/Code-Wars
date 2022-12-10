@@ -14,3 +14,16 @@ Input: nums = [1,1,1,3,3,4,3,2,4,2]
 Output: true*/
 
 //Nested for loop, set, and hashmaps are the viable answers
+
+//brute force: nested for
+function dupes(arr){
+    for(i = 0; i < arr.length; i++){
+        for(j = i+1; j < arr.length; j++){
+            if( arr[i] === arr[j]){
+                return true
+            }
+        }
+    }
+}
+
+//FIRST TRY
