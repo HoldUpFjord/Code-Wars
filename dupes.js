@@ -16,7 +16,7 @@ Output: true*/
 //Nested for loop, set, and hashmaps are the viable answers
 
 //brute force: nested for
-function dupes(arr){
+/*function dupes(arr){
     for(i = 0; i < arr.length; i++){
         for(j = i+1; j < arr.length; j++){
             if( arr[i] === arr[j]){
@@ -24,6 +24,24 @@ function dupes(arr){
             }
         }
     }
-}
+}*/
 
 //FIRST TRY
+
+//
+function containsDupes(arr){
+    let numsMap = {}
+    for(i=0; i < arr.lenth; i++){
+      let num = arr[i]
+      //if arr[i] is in numsMap: meets condition, return true
+      if(numsMap[i]){
+        return true
+        //if number not present in numsMap
+      }else {
+        //put arr[i] in numsMap{}
+        numsMap[num] = true
+      }
+    }  
+    return false
+}
+  
