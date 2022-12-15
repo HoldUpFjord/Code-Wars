@@ -2,7 +2,7 @@ function twoSum(numbers, target) {
   //bruteForce: nested for loop
     //if nums[i] + nums[j] = target return true
     
-    let result = []
+    /*let result = []
     for(i = 0; i < nums.length; i++){
       for(j = i + 1; j < nums.length; j++){
         if(nums[i] + nums[j] === target){
@@ -14,8 +14,20 @@ function twoSum(numbers, target) {
                 result.push(nums.indexOf(nums[j]))
             }
         }
+        
+    }*/
+    const numsMap = {}
+    const pairs = []
+    for(const num1 of nums){
+        const num2 = target - num1
+      if(numsMap[num2]){
+        pairs.push(num1,num2)
+      } else{
+        numsMap[num1] = 1
+      }
     }
-  return result
+    return pairs
+  
 };
 
   
