@@ -33,3 +33,4 @@ function majEl(arr){
       return 
     }
     
+}
