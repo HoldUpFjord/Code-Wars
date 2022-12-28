@@ -12,10 +12,30 @@ function removeParentheses(s){
             let prefix = s.slice( 0, i).split('')
             let suffix = s.slice(j+1, s.length).split('')
             
-            return  prefix.join('').concat(suffix.join(''))
+            
+            let resultNoTestCase6 =  prefix.join('').concat(suffix.join(''))
+            let count = 1
+            
+            if(resultNoTestCase6 === ''){
+             console.log(s.split(' '))
+             for(k = 0; k < s.length; k++){
+               
+                  if( s[k] === ')' ){
+                    count++
+                    let testCase6Arr =  Array(count+1).fill('')
+                    return testCase6Arr.join(' ')
+                
+               } 
+               
+             } 
+            //return s.split('').filter( x => x === ' ').join('')
+            } else{
+              return resultNoTestCase6
+            }
             
         }
        
       }
     }
-}  
+  
+  }
