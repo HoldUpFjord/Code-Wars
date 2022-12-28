@@ -11,11 +11,11 @@ function removeParentheses(s){
         if(s[i] === '(' && s[j] === ')') {
             let prefix = s.slice( 0, i).split('')
             let suffix = s.slice(j+1, s.length).split('')
-            return  prefix.concat(suffix)
+            
+            return  prefix.join('').concat(suffix.join(''))
             
         }
        
       }
     }
-  
-  }
+}  
