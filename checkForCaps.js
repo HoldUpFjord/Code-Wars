@@ -1,3 +1,10 @@
+//Efficient solution
+var detectCapitalUse = function(word) {
+    return word === word.toUpperCase() || word === word[0] + word.substr(1).toLowerCase();
+};
+
+
+
 //brute force
 
     function capitals(str){
@@ -29,6 +36,11 @@
           }
         }
         
+
+        
+
+
+
            
               
       
