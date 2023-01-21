@@ -19,4 +19,21 @@ for(i = count; i >= 0; i++)  {
   
 }
 
+
+//Recursive attempt
+function calculateYears(principal, interest, tax, desired) {
+  
+    let count = 0
+   
+   if (principal >= desired){
+     return count
+   } else{
+     let interestAccrued =  principal * interest
+     let Aftertax =  interestAccrued - interestAccrued*tax
+     return  calculateYears(principal+Aftertax) 
+   
+     count ++
+     }
+    }
+
   
