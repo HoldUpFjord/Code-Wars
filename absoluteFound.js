@@ -23,4 +23,4 @@ function digPow(n, p){
      }
     //else return -1
   
-}
+ } 
