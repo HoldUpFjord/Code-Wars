@@ -6,3 +6,9 @@ function peopleWithAgeDrink(old) {
     else if( old < 21){ return 'drink beer'}
     else if (old > 20) { return 'drink whisky'}
   }
+
+
+  const peopleWithAgeDrink = (age) => 
+  age < 14 ? 'drink toddy' : 
+  age < 18 ? 'drink coke' :
+  age < 21 ? 'drink beer' : 'drink whisky'
