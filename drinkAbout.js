@@ -7,7 +7,7 @@ function peopleWithAgeDrink(old) {
     else if (old > 20) { return 'drink whisky'}
   }
 
-
+// arrow function
   const peopleWithAgeDrink = (age) => 
   age < 14 ? 'drink toddy' : 
   age < 18 ? 'drink coke' :
