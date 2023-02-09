@@ -45,8 +45,12 @@ function getMiddle(s)
    
    
     // if odd
-  if(s.length % 2 != 0){
-    return splitString[Math.floor(s.length/2)]
-     return string.split(array.length/2)
-  }
+ if(s.length % 2 != 0){
+    for(i = 0; i < s.length; i++){
+      if( i === Math.floor(s.length/2)){
+         return splitString[i]
+         }
+    }
+   
+ }
 }
