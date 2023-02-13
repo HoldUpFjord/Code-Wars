@@ -1,3 +1,4 @@
+//Brute Force
 function addLength(str) {
     let arrayOfString = str.split(' ')
     
@@ -6,3 +7,12 @@ function addLength(str) {
       }
     return arrayOfString
     }
+
+//Mapped
+function addLength(str) {
+
+    let arr = str.split(' ')
+    return arr.map( x => x + ' ' + x.length)
+    
+  }
+  
