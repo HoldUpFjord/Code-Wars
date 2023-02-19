@@ -1,3 +1,4 @@
+//baseline
 function sqrt (n) {
     let sqr = Math.sqrt(n)
   
@@ -8,3 +9,7 @@ function sqrt (n) {
     }
           
   }
+
+//arrow function
+
+const isSquare = n => Number.isInteger(Math.sqrt(n));
