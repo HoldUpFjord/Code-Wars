@@ -17,3 +17,23 @@ function sortLength(array){
     }
     return array
 }
+
+//quick sort
+function sortByLength (array) {
+    if(array.length <= 1){
+      return array
+    }
+   const pivot = array[0]
+   const left = []
+   const right = []
+   
+   for( i = 1; i < array.length; i++){
+     if (array[i].length < pivot.length){
+       left.push(array[i])
+     } else {
+       right.push(array[i])
+     }
+     
+   }
+   return sortByLength(left).concat(pivot, sortByLength(right))
+};
