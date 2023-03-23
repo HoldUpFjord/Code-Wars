@@ -1,3 +1,4 @@
+//Original solution
 var lengthOfLastWord = function(s) {
     if(s.length === 1){
        return s.length
@@ -12,4 +13,9 @@ var lengthOfLastWord = function(s) {
             } 
     }
   }
+};
+
+//one liner
+var lengthOfLastWord = function(s) {
+    return s.trim().split(" ").pop().length;
 };
