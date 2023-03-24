@@ -1,6 +1,6 @@
 function arrayDiff(a, b) {
 //failed  method solution
-    //return a.filter(i => i != b)
+    //return a.filter(i => i !b.includes(i))
     
 //brute force
     for(i = 0; i < a.length; i++){
