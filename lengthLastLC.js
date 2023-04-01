@@ -19,3 +19,19 @@ var lengthOfLastWord = function(s) {
 var lengthOfLastWord = function(s) {
     return s.trim().split(" ").pop().length;
 };
+
+//most efficient space/time solution
+var lengthOfLastWord = function(s) {
+    let i = s.length - 1;
+    let letterCount = 0;
+    while(i >= 0){
+        if(s[i] == ' ' && letterCount > 0){
+            return letterCount;
+        }else if(s[i] != ' '){
+            letterCount++
+        }
+        i--;
+    }
+    
+    return letterCount
+};
