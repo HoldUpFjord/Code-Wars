@@ -1,5 +1,5 @@
 //quick sort ish solution
-//not optimal
+//not
 var removeElement = function(nums, val) {
     // Two params, nums -> arr & val-> int
     // Two Output: nums-> inPlacedArr & k
@@ -22,3 +22,14 @@ var removeElement = function(nums, val) {
        
        return left
 };
+
+//in place
+let i = 0;
+  for (let j = 0; j < nums.length; j++) {
+    if (nums[j] !== val) {
+      nums[i] = nums[j];
+      i++;
+    }
+  }
+  nums.splice(i, nums.length - i);
+  return nums.length;
