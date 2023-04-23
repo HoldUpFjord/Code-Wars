@@ -1,3 +1,4 @@
+//brute force
 async function sleep(millis) {
     return new Promise(resolve => {
        setTimeout(() => {
@@ -5,3 +6,9 @@ async function sleep(millis) {
        }, millis);
      });
    }
+
+
+   // one liner, faster
+   async function sleep(millis) {
+    await new Promise(resolve => setTimeout(resolve, millis));
+}
