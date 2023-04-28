@@ -16,3 +16,21 @@ function isSortedAndHow(array) {
     }
   
   }
+
+  //es6 spread syntax
+  function isSortedAndHow(array) {
+    //takes in array of ints
+    //returns a string
+      //one if array is asscending order, two if descending order, three if not ordered
+    let ascending = [...array].sort((a,b) => a-b)
+    let descending = [...array].sort((a,b) => b-a)
+  console.log(ascending)
+     if(array === ascending){
+       return 'yes, ascending'
+     } else if(array === descending){
+      return 'yes, descending'
+    } else {
+      return 'no'
+    }
+  
+  }
