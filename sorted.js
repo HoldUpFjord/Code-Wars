@@ -34,3 +34,11 @@ function isSortedAndHow(array) {
     }
   
   }
+
+  // filter arrow function
+  const isSortedAndHow = array => {
+    let ascending = array.filter((e, i, a) => e > a[i+1]).length == 0
+    let descending = array.filter((e, i, a) => e < a[i+1]).length == 0
+    
+    return ascending ? 'yes, ascending' : descending ? 'yes, descending' : 'no'
+  }
