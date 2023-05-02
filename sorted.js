@@ -3,13 +3,13 @@ function isSortedAndHow(array) {
     //takes in array of ints
     //returns a string
       //one if array is asscending order, two if descending order, three if not ordered
-    let ascending = array.slice().sort((a,b) => a-b)
-    let descending = array.slice().sort((a,b) => b-a)
+    let ascending = array.slice().sort((a,b) => a-b).toString()
+    let descending = array.slice().sort((a,b) => b-a).toString()
     //if array equals array,sort ascending return one
   
-     if(array === ascending){
+     if(array.toString() === ascending){
        return 'yes, ascending'
-     }  else if(array === descending){
+     }  else if(array.toString() === descending){
       return 'yes, descending'
     } else {
       return 'no'
@@ -22,12 +22,12 @@ function isSortedAndHow(array) {
     //takes in array of ints
     //returns a string
       //one if array is asscending order, two if descending order, three if not ordered
-    let ascending = [...array].sort((a,b) => a-b)
-    let descending = [...array].sort((a,b) => b-a)
+    let ascending = [...array].sort((a,b) => a-b).toString()
+    let descending = [...array].sort((a,b) => b-a).toString()
   console.log(ascending)
-     if(array === ascending){
+     if(array.toString() === ascending){
        return 'yes, ascending'
-     } else if(array === descending){
+     } else if(array.toString() === descending){
       return 'yes, descending'
     } else {
       return 'no'
